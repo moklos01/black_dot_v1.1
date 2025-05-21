@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>black.dot</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="black_dot[white].svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Roboto+Mono:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="screen_res">
+      <p>
+        Oops! <br />
+        site works best on screens 1280×720 or larger.
+      </p>
+    </div>
+    <header class="header">
+      <div>
+        <img src="black_dot[black].svg" alt="icon" class="nav-icon" />
+      </div>
+      <div class="item-center">black.dot</div>
+      <a href="mailto: alinboran2@gmail.com" class="nav-item">contact</a>
+    </header>
+    <div class="loader">
+      <div class="spinner">
+        <!--<canvas id="canvas_loading" width="500" height="150"></canvas>-->
+        <div class="loading">loading<span class="dots"></span></div>
+        <br />
+        <p>
+          this site is not optimized for phone screens yet,<br />
+          for best experience use a 16:9 screen
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="left-column">
+        <h1 class="project-title">black.dot<br />project</h1>
+        <a href="mailto: alinboran2@gmail.com">
+          <canvas
+            class="contact-btn_1"
+            id="canvas_button_1"
+            width="400"
+            height="140"
+          ></canvas>
+        </a>
+        <!-- Additional content to enable scrolling -->
+        <div id="section2" style="margin-top: 20vh">
+          <div class="content-text">
+            Hey there! I'm Rozmary, a designer passionate about making brands
+            stand out. Make sure you interect with as many elements as you can
+            during your scrolling trough this site.<br /><br />
+
+            P.S. Coffee chats and creative brainstorming are always welcome!
+          </div>
+          <a href="mailto: alinboran2@gmail.com">
+            <canvas
+              class="contact-btn_2"
+              id="canvas_button_2"
+              width="400"
+              height="140"
+            ></canvas>
+          </a>
+        </div>
+      </div>
+      <!-- Right Column - Sticky Gray Square -->
+      <div class="right-column">
+        <div class="sticky-square">
+          <canvas id="canvas" width="2000" height="2000"></canvas>
+          <script src="https://unpkg.com/@rive-app/webgl2@latest"></script>
+        </div>
+      </div>
+    </div>
+    <div class="container_2">
+      <canvas id="canvas_arrow_line" width="1920" height="100"></canvas>
+    </div>
+    <div class="container_programs">
+      <div class="row">
+        <div class="column">
+          <canvas id="canvas_after_effects" width="1280" height="772"></canvas>
+        </div>
+        <div class="column">
+          <canvas id="canvas_figma" width="1280" height="772"></canvas>
+        </div>
+        <div class="column">
+          <canvas id="canvas_rive" width="1280" height="772"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <canvas id="canvas_ai" width="1280" height="772"></canvas>
+        </div>
+        <div class="column">
+          <canvas id="canvas_ps" width="1280" height="772"></canvas>
+        </div>
+        <div class="column">
+          <canvas id="canvas_blender" width="1280" height="772"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="container_numbers">
+      <canvas id="canvas_numbers" width="3840" height="2162"></canvas>
+    </div>
+    <div class="container_ad">
+      <canvas id="canvas_ad" width="3840" height="338"></canvas>
+    </div>
+    <div class="container_skill_progress">
+      <div class="container_skills">
+        <canvas id="canvas_skills" width="3840" height="2258"></canvas>
+      </div>
+      <div>
+        <div class="container_progress">
+          <!-- Sticky stacking container -->
+          <div id="stack" class="container_stack">
+            <div class="container_stack_2">
+              <!-- Card 1 -->
+              <div class="card_new_1">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>process</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card1">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>1.research_&_the_idea</h2>
+                    <p class="card_text">
+                      I wanted this website to feel simple at first — almost
+                      quiet. But as you interact with it, little details start
+                      to respond: a button shifts, a line moves, a color fades
+                      in. That's intentional.<br /><br />
+                      I've always believed that animation, when used
+                      thoughtfully, can bring a site to life without
+                      overwhelming it. It's those tiny moments — a hover effect,
+                      a smooth transition — that make the experience feel more
+                      human.<br /><br />
+                      This project was my way of exploring how subtle motion can
+                      create connection, surprise, and depth in even the most
+                      minimal design.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="Comp 2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card2">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>2.blocking_&_wireframing</h2>
+                    <p class="card_text">
+                      Even though this was a single-page experience, structure
+                      still mattered. I started by blocking out the core
+                      sections of the landing page: hero section, programs
+                      knowledge, black_dot in numbers, skills section, process
+                      video, process detailed, my computer, ability recap,
+                      contact, footer. The focus was on hierarchy — what the
+                      user sees first, how the eye moves, and where interactions
+                      should be placed for maximum clarity and engagement.<br />
+                      <br />
+                      I used quick wireframes to test layout ideas and spacing
+                      relationships. It was less about navigation patterns and
+                      more about rhythm, balance, and flow within a vertical
+                      scroll. This step helped define a clear visual cadence —
+                      establishing breathing room, grouping related content, and
+                      ensuring that key moments felt intentional even before
+                      design or motion was introduced.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="blocking_v2.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card3">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>3.scketch</h2>
+                    <p class="card_text">
+                      I shifted to analog to loosen up creatively. Sketching by
+                      hand allows ideas to evolve outside of the constraints of
+                      grids and pixels. It’s where spontaneity lives —
+                      unexpected connections, layout experiments, and visual
+                      metaphors start to surface. These sketches weren’t final
+                      outputs, but they acted as a bridge between raw concepts
+                      and more polished digital design. They helped preserve a
+                      sense of play before structure took over.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="scketch.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card4">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>4.design_&_style_frame</h2>
+                    <p class="card_text">
+                      Using Figma, I built a focused design system to guide the
+                      look and feel of the site. I defined a clean typographic
+                      hierarchy with controlled spacing and rhythm, designed a
+                      custom icon set with a pixel-inspired aesthetic, and
+                      created rules for 3D illustrations using consistent
+                      rotation and lighting.<br /><br />
+                      Instead of traditional mockups, I worked with style frames
+                      — static snapshots of key UI states — to explore contrast,
+                      mood, and transitions. These frames helped define how
+                      components would animate between states, acting as visual
+                      references for both design and motion. It was a way to
+                      align layout, interaction, and tone before writing a
+                      single line of code.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="design.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card5">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>5.animation</h2>
+                    <p class="card_text">
+                      Using Rive, I developed a set of interactive animations
+                      that added depth and responsiveness to the interface.
+                      Motion was designed to feel subtle and intentional —
+                      reinforcing interactions through smooth transitions, hover
+                      states, and micro-feedback without distracting from the
+                      content. <br /><br />The style frames created earlier
+                      served as key references, helping define how elements
+                      transitioned between static and active states. These
+                      frames ensured that motion felt consistent with the visual
+                      system — same lighting, same spatial logic — just brought
+                      to life.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="animation.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              <div class="card_new" id="card6">
+                <div class="card_content">
+                  <div class="flex-1">
+                    <h2>6.implementation</h2>
+                    <p class="card_text">
+                      The site was built with HTML, CSS, and JavaScript,
+                      bringing together the visual system, motion design, and
+                      interaction logic into a working prototype. I focused on
+                      clean structure and direct implementation — no frameworks,
+                      just native code. <br /><br />Animations were handled with
+                      a mix of Rive, CSS transitions, and JavaScript, depending
+                      on complexity and performance needs. Subtle effects used
+                      CSS, while more dynamic interactions relied on JavaScript
+                      for greater control.<br /><br />
+                      The layout is currently static, with plans to expand it
+                      for responsive behavior in the next development phase.
+                    </p>
+                  </div>
+                  <div class="card_image">
+                    <video
+                      class="responsive-video"
+                      controls
+                      autoplay
+                      muted
+                      loop
+                    >
+                      <source src="implementation.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_last_three">
+      <div class="container_my_computer">
+        <canvas id="canvas_my_computer" width="3840" height="2022"></canvas>
+      </div>
+      <div class="grid">
+        <div class="container_about">
+          <div class="about">ability_recap</div>
+          <div class="category">
+            <div class="description">
+              visual identity; brand designer
+              <div class="expand"></div>
+            </div>
+            <div class="details">
+              <p>
+                Crafting cohesive visual languages — from logos and typography
+                to color and layout — to help brands express their personality
+                clearly and memorably.
+              </p>
+            </div>
+          </div>
+          <div class="category">
+            <div class="description">
+              web design
+              <div class="expand"></div>
+            </div>
+            <div class="details">
+              <p>
+                Designing intuitive and visually engaging websites with a focus
+                on usability, motion, and clean structure that supports the
+                brand story.
+              </p>
+            </div>
+          </div>
+          <div class="category">
+            <div class="description">
+              digital product; design system
+              <div class="expand"></div>
+            </div>
+            <div class="details">
+              <p>
+                Building scalable design systems and UI components that ensure
+                consistency and efficiency across digital products and
+                platforms.
+              </p>
+            </div>
+          </div>
+          <div class="category_last">
+            <div class="description">
+              illustrations
+              <div class="expand"></div>
+            </div>
+            <div class="details">
+              <p>
+                Creating custom illustrations to add personality, clarity, or
+                emotion to digital experiences, often aligned with the brand’s
+                visual tone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_contact">
+        <a href="mailto: alinboran2@gmail.com">
+          <canvas id="canvas_envelope" width="1920" height="975"></canvas
+        ></a>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>Contact</h3>
+      <a href="mailto: alinboran2@gmail.com">
+        <h3>alinboran2@gmail.com</h3>
+      </a>
+    </div>
+    <script>
+      // Optional - Add any JavaScript for additional effects
+      document.addEventListener("DOMContentLoaded", function () {
+        // You could add scroll effects or animations here
+        // The sticky positioning is handled by CSS
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
